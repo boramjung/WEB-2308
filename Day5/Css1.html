@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* tag는     p{
+            속성:속성값;
+        }
+        class는      .클래스이름{
+            속성:속성값;
+        }
+        id는         #아이디{
+            속성:속성값;
+        } 
+        */
+    .학년1반{
+        color:blue;
+        font-weight:900;
+    }
+    #특별한친구{
+        color:pink; 
+        font-size:24px; 
+        font-weight:bold;
+    }
+    strong{
+        color:rgb(124, 209, 112); 
+        font-size:56px; 
+        font-weight:bold;
+    }
+
+    </style>
+    <!-- 스타일시트는 외부에 작성하는게 일반적인 방식이지만 html 내부에도 가능하다. -->
+</head>
+<body>
+    css 
+
+    cascading style sheets
+
+    <!-- font 태그를 이용해 text를 html5에서 꾸미는 거는 안된다. 불법임! -->
+    <font color="red" size="20">안녕하세요.</font>
+
+    <!-- style시트를 인라인에 넣는 방식 -->
+    <!-- 재사용성이 없기 때문에 잘 쓰이지 않음 -->
+    <!-- 디자인이 css로 분리되면서 html내부에는 쓰는 인라인방식은 거의 쓸일이 없다. -->
+    <!-- 우선순위가 가장 높은게 특징이기때문에 응급조치용으로는 쓸만할지도? -->
+    <p style="color:red; font-size:20px;">안녕하세요</p>
+
+    <!-- 현재 이용하는 css작성방법 -->
+    <!-- tag,class,id를 이용해 스타일을 지정할 수 있으며, 재사용성이 좋기 때문에 효율적으로 작성가능함 -->
+    <p class="학년1반">스타일시트 이용</p>
+    <span class="학년1반">같은 1학년 1반은</span>
+    <a href="#" class="학년1반">전부 영향을 받습니다.</a>
+
+    <!-- tag: 자체에 스타일을 넣는것. 일반적으로 초기화에 사용한다. -->
+    <!-- class :동일한 속성을 여러 개체가 공유해야할때 이용. 중복 사용이 가능하다. -->
+    <!-- id: 한 문서에 한번만 사용가능한 선택자.중복사용 불가능! 중복되면 불법임-->
+
+    <span id="특별한친구">특별한친구는 아이디로 지정해줘야지</span>
+    <strong>강력한 태그를 더욱 강력하게</strong>
+    <!-- html,css특성상 굉장히 관대하기 때문에 작동은 되지만 -->
+    <!-- id가 두번 들어가는 건 웹표준 위반이므로 하지 말도록 하자! -->
+    <p id="특별한친구">두번째도 가능한가>?</p>
+
+
+
+</body>
+</html>
