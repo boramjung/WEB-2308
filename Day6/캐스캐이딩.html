@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배고파</title>
+    <!-- 동일 class 두개 입력시 아래 입력값이 우선순위 -->
+    <style>
+        /* css 우선순위 규칙? */
+        /* 1.아래 작성된게 우선순위가 높다. */
+        .test{
+            color: pink;
+        }
+        .test{
+            color: black;
+        }
+        
+        /* 2.tag  <  class,id */
+        .test{
+            font-size: 50px;
+        }
+
+        p{
+            font-size: 12px;
+        }
+        /* 3. class < id */
+        #text-id{
+            color: red;
+        }
+        .text2{
+            color: pink;
+        }
+
+        /* 4. 부모자식간의 관계가 명확할때 우선순위가 높아진다. */
+        body>.text2{
+            font-size: 40px;
+        }
+        .text2{
+            font-size: 12px;
+        }
+        /* 반복되는 개체들 중 일부만 다른 컨텐츠를 만들때 우선순위를 이용하면 효율적 */
+        .a-button{
+            display: block;
+            width: 160px;
+            height: 24px;
+            border-radius: 20px;
+            border: 2px solid pink;
+            color: pink;
+            text-decoration: none;
+            text-align: center;
+
+        }
+        #강조 {
+            border-color: red;
+            color: red;
+        }
+        /* 5.(주의)!important, 쓰지말자! */
+        .text3{
+            color: green !important;
+        }
+        #important-id{
+            color: red;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <p class="test">테스트용</p>
+    <p class="text2" id="text-id">id와 클래스</p>
+    <a href="#" class="a-button">버튼</a>
+    <a href="#" class="a-button" id="강조">버튼</a>
+    <a href="#" class="a-button">버튼</a>
+    <a href="#" class="a-button">버튼</a>
+    <a href="#" class="a-button">버튼</a>
+    <a href="#" class="a-button">버튼</a>
+    <p class="text3" id="important-id">important는 쓰지 마세요</p>
+    <!-- 6.html 내부에 작성되는 인라인 스타일은 css,id보다 우선순위가 높다. -->
+    <!-- important를 제외하고 최고 우선순위 -->
+    <p style="color: red;">인라인스타일</p> 
+
+</body>
+</html>
