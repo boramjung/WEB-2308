@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        .box-mom1{
+            display: flex;           
+            flex-direction: column;
+            /* gap은 flex에서만 작동함 */
+            /* flex-direction:column으로 변경하면 아래 공간 차이 */
+            gap: 16px;
+        }
+        .box-left{
+            width: 480px;
+            height: 336px;
+            background-color: #ff8c8c;
+        }
+        .box-right1{
+            width: 160px;
+            height: 160px;
+            background-color: #ff8c8c;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            /* flex-direction:row(가로방향배치)가 기본으로 설정되어 있음 */
+            gap: 16px;
+        }
+     
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box-left"></div> 
+        <div class="box-mom1">
+            <div class="box-right1">1</div>
+            <div class="box-right1">2</div>
+        </div>
+    </div>
+</body>
+</html>
