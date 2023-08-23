@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+    .container{
+        display: flex;
+    }
+    .box{
+        width: 200px;
+        height: 300px;
+        border: 1px solid black;
+    }
+    .normal{
+        height: auto;
+        /* 기본값으로 다시 되돌려주기 */
+            }
+
+    .overflow-hidden{
+        overflow: hidden;
+        /* 넘친 컨텐츠는 가려서 안보여주기 */
+    }
+    .overflow-scroll{
+        overflow: scroll;
+        /* 넘친 컨텐츠는 확인 할 수 있도록 스크롤을 만들어줌 */
+    }
+    </style>
+</head>
+<body>
+    <!-- overflow(범람) -->
+    <div class="container">
+        <div class="box normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque consequuntur dolorem provident quisquam voluptatibus, minus velit molestiae, quia repellendus, suscipit aliquid iusto inventore minima nulla optio harum laudantium ut obcaecati?lo
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, voluptatibus fugiat eligendi delectus recusandae dignissimos ex magnam non omnis aliquam doloribus fuga, dolores aut nisi quam tenetur atque accusamus libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae rerum necessitatibus, voluptates adipisci sit saepe nulla eligendi error architecto accusantium, molestias exercitationem facilis non magnam illo autem vitae aut excepturi!</div>
+        <div class="box overflow-hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque consequuntur dolorem provident quisquam voluptatibus, minus velit molestiae, quia repellendus, suscipit aliquid iusto inventore minima nulla optio harum laudantium ut obcaecati?lo
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, voluptatibus fugiat eligendi delectus recusandae dignissimos ex magnam non omnis aliquam doloribus fuga, dolores aut nisi quam tenetur atque accusamus libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem excepturi id ipsum veritatis assumenda quam voluptas dolorum sit quia! Quibusdam cupiditate itaque vel nostrum doloribus? Ea quod eveniet quibusdam amet?</div>
+        <div class="box overflow-scroll">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque consequuntur dolorem provident quisquam voluptatibus, minus velit molestiae, quia repellendus, suscipit aliquid iusto inventore minima nulla optio harum laudantium ut obcaecati?lo
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, voluptatibus fugiat eligendi delectus recusandae dignissimos ex magnam non omnis aliquam doloribus fuga, dolores aut nisi quam tenetur atque accusamus libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem excepturi id ipsum veritatis assumenda quam voluptas dolorum sit quia! Quibusdam cupiditate itaque vel nostrum doloribus? Ea quod eveniet quibusdam amet?</div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque consequuntur dolorem provident quisquam voluptatibus, minus velit molestiae, quia repellendus, suscipit aliquid iusto inventore minima nulla optio harum laudantium ut obcaecati?lo
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, voluptatibus fugiat eligendi delectus recusandae dignissimos ex magnam non omnis aliquam doloribus fuga, dolores aut nisi quam tenetur atque accusamus libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem excepturi id ipsum veritatis assumenda quam voluptas dolorum sit quia! Quibusdam cupiditate itaque vel nostrum doloribus? Ea quod eveniet quibusdam amet?</div>
+    </div>
+</body>
+</html>
