@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link{
+            color: green;
+        }
+        a:visited{
+            color: red;
+        }
+        p::first-letter{
+            font-size: 24px;
+        }
+
+        p::first-line{
+            color: red;
+        }
+        p::selection{
+            background: pink;
+            color: #4885e1;           
+        }
+        span:not(.hi){
+            color: #4885e1;
+        }
+        /* not 선택자 */
+    </style>
+</head>
+<body>
+        <!-- 링크선택자
+        :link : 링크요소
+        :visited : 방문한적이 있는 링크요소 
+
+        문자선택자
+        선택자::first-letter : "선택자의" 첫번째 글씨
+        선택자::first-line : "선택자"의 첫번째 줄
+        선택자::selection : "선택자"이면서 사용자가 선택(드래그등)한 요소
+
+        부정선택자 
+        선택자1:not(선택자2) : "선택자1"이 "선택자2"가 아닐때 -->
+
+    <a href="#">임시링크</a>
+    <a href="http://naver.com">네이버</a>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolor quibusdam dolore, placeat qui labore esse pariatur vel adipisci consectetur, 
+        distinctio officiis consequuntur odit tenetur laudantium dicta totam quas culpa.</p>
+
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio atque, fugit unde placeat veritatis quibusdam repellendus. Cum, fugiat! Iure, doloremque rem quae iusto animi eveniet quam aut nihil corrupti esse.</div>
+
+    <span class="hi">안녕</span>
+    <span class="hi">안녕</span>
+    <span>안녕</span>   
+    
+</body>
+</html>
