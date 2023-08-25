@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+           /* 이런식으로 작성도 가능하다 */
+            background: aquamarine;
+        }
+        .box3{
+            /* 웹에서 이미지를 사용하는 방법 2개 */
+            /* img태그 이용 */
+            /* css에 background-img 속성을 이용해 넣거나 */
+            width: 500px;
+            height: 500px;
+            background-image: url(/카카오사진.jpg);
+        }
+        /* 1.img는 하나의 개체이고, back-img는 배경일뿐이다. */
+        /* img는 글자랑 안겹치고 back-img는 글자랑 겹치는게 기본 */
+      
+
+        2.img는 브라우저가 비율을 알고 있고 back-img는 비율을 모른다.
+        /* 2.img는 이미지 크기에 맞춰 컨테이너 크기가 자동조절되고 back-img는 배경일뿐 컨테이너 크기에는 영향을 못준다. */
+        /* 예를들면 img의 가로크기를 조절하면 세로도 자동으로 조정된다. */
+
+        /* 3.img는 대체택스트 기능이 있지만 back-img는 대체텍스트 기능이 없다. */
+        /* 물론 비슷하게 만들어 주는 방법은 있음 비교적 처리가 복잡하다. */
+        .카카오{
+            width: 200px;
+        }
+        .box4{
+            background-image: url(/카카오사진.jpg);
+            width: 200px;
+        }
+        /* 백그라운드 이미지에서 신경써야할 크기는 두개 */
+        /* 하나는 컨테이너의 사이즈 */
+        /* 하나는 백그라운드 이미지의 사이즈 */
+
+        .box5{
+            background-image: url(/카카오사진.jpg);
+            width: 200px;
+            height: 115.67px;
+            background-size: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <img src="/카카오사진.jpg" alt="카카오" class="카카오">
+    <div class="box4">cccc
+        <br>컨텐츠가 생긴만큼만 개체 크기라 늘어난다.
+    </div>
+
+    <div class="box5"></div>
+
+</body>
+</html>

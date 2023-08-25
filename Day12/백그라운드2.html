@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        .box5{
+            background-image: url(/카카오사진.jpg);
+            width: 500px;
+            height: 225.67px;
+            background-size: 100%;
+        }
+        .box6{
+            width: 200px;
+            height: 300px;
+            background-image: url(/카카오사진.jpg);
+            background-color: red;
+            background-size: 100%;
+            /* 배경 반복에 대한 속성 */
+            background-repeat: no-repeat;
+            border: 5px solid pink;
+        }
+        .box7{
+            width: 200px;
+            height: 300px;
+            background-image: url(/카카오사진.jpg);
+            background-color: red;
+            background-size: 100% 100%;
+            /* 백그라운드 사이즈에 값이 한개면 x, 값이 2개면 xy */
+            background-repeat: no-repeat;
+            border: 5px solid pink;
+        }
+        .box8{
+            width: 200px;
+            height: 300px;
+            background-image: url(/카카오사진.jpg);
+            background-color: red;
+            background-size: cover;
+            /* 비율에 맞게 배경이미지를 늘려 빈공간이 보이지 않게 채워주는 속성 */
+            /* 주로 많이 사용하는 방법은 cover이다. */
+            /* cover.contanin는 back-size속성.png참고 */
+            background-repeat: no-repeat;
+            border: 5px solid pink;
+        }
+        .box9{
+            width: 500px;
+            height: 100px;
+            background-image: url(/카카오사진.jpg);
+            background-color: red;
+            background-size: contain; 
+            background-repeat: no-repeat;
+            border: 5px solid pink;
+        }
+        .box10{
+            width: 500px;
+            height: 100px;
+            background-image: url(/카카오사진.jpg);
+            background-color: red;
+            background-size: contain;
+            /* 비율에 맞게 배경이미지를  */
+            background-repeat: no-repeat;
+            border: 5px solid pink;
+            /* 백그라운드 위치조절 */
+            background-position: center;
+            /* center,left,right,top,bottom */
+            /* ex)background-position :left-top;(왼쪽 위를 기준으로 보여주기) */
+            /* center 1개만 넣었을때 [background-position : center center]와 동일 */
+            /* background-position : 20% 50% 등 세세한 값도 설정가능 */
+        }
+    </style>
+</head>
+<body>
+    <div class="box5"></div>
+    <div class="box6"></div>
+    <div class="box7"></div>
+    <div class="box8"></div>
+    <div class="box9"></div>
+    <div class="box10"></div>
+</body>
+</html>
