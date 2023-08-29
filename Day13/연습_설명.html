@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        header{
+            /* margin : 상하 좌우(값두개) */
+            /* margin : 상하자우전부(값하나) */
+            /* margin-left, margin-right, margin-top, margin-bottom */
+            width: 1000px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: space-between;
+            margin: 16px;
+            margin: 0 auto;
+        }
+        h1{
+            background-color: yellow;
+            width: 160px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* color: black; */
+        }
+        h1>a{
+            color: black;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav{
+            width: 240px;
+            background-color: lightskyblue;
+        }
+        nav>ul{
+            display: flex;
+        }
+        nav>ul:first-child{
+            background-color: pink;
+            margin-bottom: 24px;
+        }
+        nav>ul:last-child{
+            background-color: aquamarine;
+        }
+        nav>ul>li{
+            width: 100%;
+            text-align: center;
+            height: 36px;
+            line-height: 36px;
+        }
+        section{
+            width: 1000px;
+            display: flex;
+            gap: 16px;
+            margin: 0 auto;
+            margin-bottom: 16px;
+        }
+        aside{
+            width: 240px;
+            border: solid 1px black;
+            flex-shrink: 0;
+            box-sizing: border-box;
+            margin-top: 16px;
+            padding: 16px;
+            height: fit-content;
+        }
+        article{
+            border: 1px solid black;
+            margin-top: 16px;
+            padding: 16px;
+        }
+        article>h2{
+            background-color: pink;
+            padding: 8px;
+            font-weight: bold;
+        }
+        aside>h2{
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 16px;
+        }
+        aside>.banner-box{
+            background-color: gray;
+            height: fit-content;
+            padding: 16px;
+        }
+        aside>p{
+            margin-bottom: 16px;
+        }
+        footer{
+            background-color: pink;
+            width: 1000px;
+            text-align: center;
+            padding: 12px;
+            border: 1px solid black;
+            box-sizing: border-box;
+            margin: 0 auto;
+        }
+
+
+    </style>
+</head>
+<body>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="#">
+            web-logo
+            </a>
+        </h1>
+        <nav>
+            <ul>
+                <li>menu1</li>
+                <li>menu1</li>
+                <li>menu1</li>
+                <li>menu1</li>
+            </ul>
+            <ul>
+                <li>menu2</li>
+                <li>menu2</li>
+                <li>menu2</li>
+                <li>menu2</li>
+            </ul>
+        </nav>
+    </header>
+        <section>
+        <main>
+            <article>
+                <h2>main article</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt voluptates at labore mollitia, 
+                et, iusto perspiciatis aperiam beatae quidem voluptas corporis. Dolore illo vitae molestiae, maiores eos provident ipsam earum.</p>
+            </article>
+            <article>
+                <h2>main article</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt voluptates at labore mollitia, 
+                et, iusto perspiciatis aperiam beatae quidem voluptas corporis. Dolore illo vitae molestiae, maiores eos provident ipsam earum.</p>
+            </article>
+            <article>
+                <h2>main article</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt voluptates at labore mollitia, 
+                et, iusto perspiciatis aperiam beatae quidem voluptas corporis. Dolore illo vitae molestiae, maiores eos provident ipsam earum.</p>
+            </article>
+        </main>
+        <aside>
+             <h2>Right aside</h2>
+             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto est laborum itaque ducimus soluta. Magni, 
+            aspernatur mollitia beatae asperiores cupiditate voluptas magnam dolor a? Laudantium, quia! Quo a omnis doloribus?</p>
+            <div class="banner-box">
+                <h3>TEXT</h3>
+                <p>banner</p>
+            </div>
+        </aside>
+    </section>
+    <footer>
+      <p>html5 copyright</p>
+    </footer>
+</body>
+</html>
+</body>
+</html>
