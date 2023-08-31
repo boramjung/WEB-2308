@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        /* display :flex */
+        /* flex는 자식요소를 정렬해주는 속성 */
+    .container{
+        width: 500px;
+    }
+    .no1{}
+    .no2{
+        display: flex;
+    }
+    .contents{
+        width: 200px;
+        height: 200px;
+        background-color: pink;
+        border: 1px solid black;
+        box-sizing: border-box;
+        font-size: 32px;
+        font-weight: bold;
+    }
+    </style>
+</head>
+<body>
+    <div class="container no1">
+        <div class="contents">1</div>
+        <div class="contents">1</div>
+    </div>
+    
+    <div class="container no2">
+        <div class="contents">2</div>
+        <div class="contents">2</div>
+    </div>
+</body>
+</html>

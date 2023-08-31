@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        /* justify-contents : 정렬축을  
+        flex-start(left):왼쪽정렬
+        center:가운데정렬
+        flex-end(right):오른쪽정렬
+        space-between :양 끝 + 자동간격배치
+        space-around: 컨텐츠 양옆여백 동일하게
+        space-evenly: 모든 여백을 동일하게
+        
+        */
+        /* 
+        align-itms : 정렬축을 기준으로 수직정렬
+            flex-start(top) : 위쪽 정렬
+            center : 가운데 정렬
+            flex-end(botom):아래쪽 정렬
+         */
+         .icons{
+            width: 1200px;
+            background-color: #ccc;
+            display: flex;
+            justify-content: space-between;
+         }
+        .icon{
+            width: 48px;
+            height: 48px;
+            background-color: gray;
+            border: 1px solid black;
+        }
+        /* flex */
+        /* flex-direction : row(기본값,행)
+        column (열, 새로배치)
+
+        */
+        .icon-contents{
+            display: flex;
+        }
+        header{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .search{
+            width: 880px;
+            height: 100px;
+            border: 1px solid black;
+        }
+        .menus{
+            width: 800px;
+            display: flex;
+            box-sizing: border-box;
+        }
+        .menu-contents{
+            width: 150px;
+            height: 210px;
+            background-color: pink;
+            border: 1px solid black;
+            box-sizing: border-box;
+            flex-shrink: 0;
+            /* shrink : 수축 */
+            /* 컴퓨터에서 0은 false(안한다)라는 뜻 */
+            /* =수축하지 않게 만든다. */
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <div class="icons">
+    <div class="icon-contents">
+        <div class="icon"></div>
+        <div class="icon"></div>
+    </div>
+    <div class="icon-contents">
+        <div class="icon"></div>
+        <div class="icon"></div>
+    </div>
+   
+    </div>
+    <div class="search"></div>
+    <div class="menus">
+        <div class="menu-contents"></div>
+        <div class="menu-contents"></div>
+        <div class="menu-contents"></div>
+        <div class="menu-contents"></div>
+        <div class="menu-contents"></div>
+        <div class="menu-contents"></div>
+        <div class="menu-contents"></div>
+        <div class="menu-contents"></div>
+    </div>
+</header>
+</body>
+</html>
